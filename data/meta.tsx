@@ -1,29 +1,19 @@
 import React from "react"
 
 const siteInfo = {
-  title: "Daniel Eden \u2014 Photos",
-  description: "Photography by Daniel Eden, a designer living in London, UK.",
+  title: "Diego Peralta \u2014 Photos \u2014 Naples, Italy",
+  description: "Photos from Naples, Italy by Diego Peralta.",
   fullDescription: (
     <React.Fragment>
-      <p>
-        Daniel Eden is a Designer from Manchester, England, living and working
-        in London. He prefers to talk in the first person.
-      </p>
-
-      <p>
-        Amongst thousands of photos, it&rsquo;s easy to lose track of my
-        favorites. This little website serves as a home for the photos I&rsquo;m
-        most proud of.
-      </p>
-
-      <p>
-        You can follow me on <a href="https://twitter.com/_dte">Twitter</a> and{" "}
-        <a href="https://instagram.com/_dte">Instagram</a>.
-      </p>
+     <div className="site-meta">
+        <p>
+          Another trip to Italy, this time to Naples 🍕. 
+        </p>
+     </div>
     </React.Fragment>
   ),
   image:
-    "https://dephotos.imgix.net/00013.jpg?auto=format&dpr=2&fm=pjpg&crop=faces&fit=max&w=1&h=900",
+    "https://diego-media-naples.imgix.net/images/20200216_105052.jpg?auto=format&dpr=2&fm=pjpg&crop=faces&fit=max&w=1&h=900",
 }
 
 export default siteInfo

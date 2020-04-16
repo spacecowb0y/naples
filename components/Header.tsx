@@ -5,7 +5,7 @@ const Header = (): ReactElement => {
   return (
     <header className="site-header">
       <h1 className="site-title">
-        <a href="https://daneden.me">Daniel Eden</a> &mdash; Photos
+        cd ~/<a href="https://diego.earth">diego</a>/<a href="https://media.diego.earth">media</a>/<a href="https://naples.diego.earth/">naples</a><span className="cursor" />
       </h1>
     </header>
   )

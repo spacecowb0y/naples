@@ -33,16 +33,16 @@ function HomePage() {
         <meta name="viewport" content="width=device-width, initial-scale=1" />
 
         <meta name="twitter:card" content="summary_large_image" />
-        <meta name="twitter:site" content="@_dte" />
-        <meta property="og:title" content="Daniel Eden &mdash; Photography" />
+        <meta name="twitter:site" content="@_spacec0wboy" />
+        <meta property="og:title" content="Diego Peralta &mdash; Photography: Trip to Naples, Italy." />
         <meta property="og:type" content="website" />
         <meta
           property="og:image"
-          content="https://dephotos.imgix.net/00013.jpg?auto=format&dpr=2&fm=pjpg&crop=faces&fit=max&w=1&h=900"
+          content="https://diego-media-naples.imgix.net/images/20200216_105052.jpg?auto=format&dpr=2&fm=pjpg&crop=faces&fit=max&w=1&h=900"
         />
         <meta property="og:description" content={siteInfo.description} />
 
-        <link rel="preconnect" href="https://dephotos.imgix.net" />
+        <link rel="preconnect" href="https://diego-media-naples.imgix.net" />
         <link rel="preconnect" href="https://fonts.googleapis.com" />
         <link
           href="https://fonts.googleapis.com/css?family=Work+Sans:500&display=swap&subset=latin-ext"

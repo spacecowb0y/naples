@@ -31,7 +31,13 @@ export default () => (
         -webkit-text-size-adjust: none;
         background-color: var(--background);
         color: var(--foreground);
-        font: 100%/1.5 "Work Sans", sans-serif;
+        font: 100%/1.5  -apple-system, BlinkMacSystemFont,
+        'avenir next', avenir,
+        'helvetica neue', helvetica,
+        ubuntu,
+        roboto, noto,
+        'segoe ui', arial,
+        sans-serif;
         font-weight: 500;
         height: 100%;
         overflow: hidden;
@@ -88,9 +94,15 @@ export default () => (
         font-variant-caps: all-small-caps;
       }
 
+
+      .site-header,
+      .site-meta {
+      }
+
       .site-title {
         font-weight: inherit;
         font-size: 1rem;
+        margin-bottom: 1.5em;
       }
 
       #__next {
@@ -193,6 +205,22 @@ export default () => (
 
       .image__img.is-not-loaded {
         opacity: 0;
+      }
+      .cursor {
+        display: inline-block;
+        width: 10px;
+        height: 1.2rem;
+        background: green;
+        margin-left: 5px;
+        border-radius: 1px;
+        animation: cursor 1s infinite;
+        vertical-align: middle;
+      }
+
+      @keyframes cursor {
+        0% { opacity: 0; }
+        50% { opacity: 1; }
+        10
       }
     `}
   />

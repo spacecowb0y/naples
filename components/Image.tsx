@@ -5,7 +5,7 @@ import Imgix from "react-imgix"
 import useSwr from "swr"
 import useIntersect from "../hooks/useIntersection"
 
-const IMGIX_URL = "https://dephotos.imgix.net/"
+const IMGIX_URL = "https://diego-media-naples.imgix.net/images/"
 const { useEffect, useState } = React
 
 type Props = {
@@ -54,15 +54,18 @@ function Image(props: Props): ReactElement {
     }
 
     if (entry?.intersectionRatio >= 0.9 && onScreen && !!data) {
-      data.json().then(palette => {
-        document.documentElement.style.setProperty(
-          "--background",
-          palette.dominant_colors.vibrant_dark.hex
-        )
-        document.documentElement.style.setProperty(
-          "--foreground",
-          palette.dominant_colors.vibrant_light.hex
-        )
+      console.log(data);
+      data.clone().json().then(palette => {
+        if (palette && palette.dominant_colors && palette.dominant_colors.vibrant_dark && palette.dominant_colors.vibrant_light) {
+          document.documentElement.style.setProperty(
+            "--background",
+            palette.dominant_colors.vibrant_dark.hex
+          )
+          document.documentElement.style.setProperty(
+            "--foreground",
+            palette.dominant_colors.vibrant_light.hex
+          )
+        }
       })
     }
   }, [entry, onScreen, data])
